@@ -1,0 +1,117 @@
+.rolodex {
+    list-style: none inside none;
+    width: 500px;
+    height: 260px;
+    padding: 0;
+    perspective: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .rolodex li {
+      border: 1px solid grey;
+ background-color: white;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    transform: translateY(100px) translateZ(-100px) rotateX(-90deg); 
+    transition: all 333ms ease-out;
+    font-family: Helvetica, Arial;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+  
+  .rolodex .placeholder {
+    background-color: Gainsboro;
+    display: block;
+    height: 20px;
+    margin-top: 25px;
+    text-decoration: none;
+    line-height: 20px;
+    padding: 10px;
+  }
+  
+  .rolodex .prev9,
+  .rolodex .prev8,
+  .rolodex .prev7,
+  .rolodex .prev6,
+  .rolodex .prev5,
+  .rolodex .prev4,
+  .rolodex .prev3,
+  .rolodex .prev1,
+  .rolodex .prev2,
+  .rolodex .current {
+    display: block;
+    position: absolute;
+    opacity: 1;
+  }
+  .rolodex .prev10 {
+    opacity: 1;
+    transform: translateY(-500px) translateZ(-250px) rotateX(1deg);
+    z-index: -8;
+  }
+  .rolodex .prev9 {
+    opacity: 1;
+    transform: translateY(-450px) translateZ(-225px) rotateX(1deg);
+    z-index: -7;
+  }
+  .rolodex .prev8 {
+    opacity: 1;
+    transform: translateY(-400px) translateZ(-200px) rotateX(1deg);
+    z-index: -6;
+  }
+  .rolodex .prev7 {
+    opacity: 1;
+    transform: translateY(-350px) translateZ(-175px) rotateX(1deg);
+    z-index: -5;
+  }
+  .rolodex .prev6 {
+    opacity: 1;
+    transform: translateY(-300px) translateZ(-150px) rotateX(1deg);
+    z-index: -4;
+  }
+  .rolodex .prev5 {
+    opacity: 1;
+    transform: translateY(-250px) translateZ(-125px) rotateX(1deg);
+    z-index: -3;
+  }
+  .rolodex .prev4 {
+    opacity: 1;
+    transform: translateY(-200px) translateZ(-100px) rotateX(1deg);
+    z-index: -2;
+  }
+  .rolodex .prev3 {
+    opacity: 1;
+    transform: translateY(-150px) translateZ(-75px) rotateX(1deg);
+    z-index: -1;
+  }
+  .rolodex .prev2 {
+    opacity: 1;
+    transform: translateY(-100px) translateZ(-50px) rotateX(1deg);
+    z-index: 1;
+  }
+  
+  .rolodex .prev1 {
+    /* opacity: 1;
+    transform: translateY(100px) translateZ(-200px) rotateX(-15deg);
+    z-index: 2; */
+    opacity: 1;
+    /* transform: translateY(-180px) translateZ(-300px) rotateX(15deg); */
+     transform: translateY(-50px) translateZ(-25px) rotateX(1deg);
+    z-index: 2;
+  }
+  
+  .rolodex .current {
+    opacity: 1;
+    transform: translateY(0) translateZ(0) rotateX(0);
+    z-index: 3;
+  }
+  
+
+
